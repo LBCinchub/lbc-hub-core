@@ -1,0 +1,44 @@
+.lumina-verify-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  cursor: default;
+  transition:
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+  user-select: none;
+}
+
+.lumina-verify-badge:hover {
+  background: rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.8);
+  color: #f0cb5a;
+  box-shadow:
+    0 0 8px rgba(212, 175, 55, 0.6),
+    0 0 20px rgba(212, 175, 55, 0.35),
+    0 0 40px rgba(212, 175, 55, 0.15);
+}
+
+.lumina-icon {
+  flex-shrink: 0;
+  transition: filter 0.3s ease;
+}
+
+.lumina-verify-badge:hover .lumina-icon {
+  filter: drop-shadow(0 0 4px rgba(212, 175, 55, 0.9));
+}
+
+.lumina-label {
+  line-height: 1;
+}
