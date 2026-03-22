@@ -1,0 +1,61 @@
+/* ── Obsidian-Gold Design System ── */
+:root {
+  /* Obsidian base */
+  --bg:          #08070a;
+  --bg-surface:  rgba(15, 10, 5, 0.72);
+  --text:        rgba(200, 185, 140, 0.75);
+  --text-h:      #f0e6b2;
+
+  /* Gold accents */
+  --gold:        #d4af37;
+  --gold-light:  #f0cb5a;
+  --gold-dim:    rgba(212, 175, 55, 0.4);
+  --gold-glow:   rgba(212, 175, 55, 0.35);
+
+  /* Borders */
+  --border:      rgba(212, 175, 55, 0.18);
+
+  /* Typography */
+  --sans:    system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono:    ui-monospace, Consolas, monospace;
+
+  font: 16px/150% var(--sans);
+  letter-spacing: 0.15px;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle radial gradient backdrop for the page */
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.07) 0%, transparent 60%),
+    var(--bg);
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+p { margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
