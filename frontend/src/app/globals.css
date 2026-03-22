@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start: 15, 12, 41;
+  --background-end: 36, 36, 62;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    rgb(var(--background-start)) 0%,
+    rgb(var(--background-end)) 100%
+  );
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+}
+
+/* Glassmorphism utility classes */
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-[20px] border border-white/20 rounded-2xl;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+
+  .glass-card {
+    @apply glass p-6 transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply bg-white/15 border-white/30;
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .prestige-diamond {
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+  }
+
+  .prestige-gold {
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(135deg, #f59e0b, #fbbf24, #fde68a);
+  }
+
+  .prestige-silver {
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(135deg, #94a3b8, #cbd5e1, #e2e8f0);
+  }
+}
