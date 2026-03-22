@@ -1,0 +1,230 @@
+/* ============================================================
+   TravelCard — Digital Boarding Pass
+   Obsidian-Gold luxury theme
+   ============================================================ */
+
+/* ── Design tokens ── */
+:root {
+  --obsidian-950: #0a0a0f;
+  --obsidian-900: #12121a;
+  --obsidian-800: #1c1c28;
+  --obsidian-700: #26263a;
+  --gold-400: #f5c842;
+  --gold-500: #d4af37;
+  --gold-600: #b8962e;
+  --gold-glow: rgba(212, 175, 55, 0.35);
+  --card-radius: 16px;
+  --hole-size: 24px;
+}
+
+/* ── Card shell ── */
+.travel-card {
+  background: var(--obsidian-900);
+  border: 1px solid var(--gold-600);
+  border-radius: var(--card-radius);
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.7),
+    0 0 48px var(--gold-glow);
+  color: #e8e0d0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  max-width: 480px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ── Header strip ── */
+.travel-card__header {
+  background: linear-gradient(135deg, var(--obsidian-950) 0%, var(--obsidian-800) 100%);
+  border-bottom: 1px solid var(--gold-600);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 24px 16px;
+}
+
+.travel-card__airline {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel-card__logo {
+  color: var(--gold-400);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.travel-card__class {
+  background: var(--gold-600);
+  border-radius: 4px;
+  color: var(--obsidian-950);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.travel-card__route {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.travel-card__origin,
+.travel-card__dest {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.travel-card__dest {
+  color: var(--gold-400);
+}
+
+.travel-card__arrow {
+  color: var(--gold-600);
+  flex: 1;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ── Perforation / tear strip ── */
+.travel-card__perforation {
+  align-items: center;
+  background: var(--obsidian-950);
+  border-block: 1px dashed var(--gold-600);
+  display: flex;
+  padding: 0 16px;
+  position: relative;
+}
+
+.travel-card__hole {
+  background: transparent;
+  border: 1px solid var(--gold-600);
+  border-radius: 50%;
+  display: block;
+  flex-shrink: 0;
+  height: var(--hole-size);
+  width: var(--hole-size);
+}
+
+.travel-card__dashes {
+  border-top: 2px dashed var(--obsidian-700);
+  flex: 1;
+  margin: 0 8px;
+}
+
+/* ── Body ── */
+.travel-card__body {
+  padding: 20px 24px;
+}
+
+.travel-card__meta {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.travel-card__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.travel-card__meta-label {
+  color: var(--gold-600);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.travel-card__meta-value {
+  color: #f5f0e8;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ── Lumina AI recommendations ── */
+.travel-card__recommendations {
+  background: var(--obsidian-800);
+  border: 1px solid var(--obsidian-700);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.travel-card__rec-title {
+  margin: 0 0 10px;
+}
+
+.travel-card__lumina-badge {
+  color: var(--gold-400);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.travel-card__rec-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-card__rec-item {
+  border-bottom: 1px solid var(--obsidian-700);
+  color: #c8bfa8;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 7px 0;
+}
+
+.travel-card__rec-item::before {
+  color: var(--gold-500);
+  content: '› ';
+  font-weight: 700;
+}
+
+.travel-card__rec-item:last-child {
+  border-bottom: none;
+}
+
+/* ── Footer / CTA ── */
+.travel-card__footer {
+  background: linear-gradient(135deg, var(--obsidian-950) 0%, var(--obsidian-800) 100%);
+  border-top: 1px solid var(--gold-600);
+  padding: 16px 24px;
+}
+
+.travel-card__cta {
+  background: linear-gradient(135deg, var(--gold-500) 0%, var(--gold-400) 100%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px var(--gold-glow);
+  color: var(--obsidian-950);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 12px 20px;
+  transition: box-shadow 0.2s ease, transform 0.1s ease;
+  width: 100%;
+}
+
+.travel-card__cta:hover {
+  box-shadow: 0 6px 24px rgba(212, 175, 55, 0.55);
+  transform: translateY(-1px);
+}
+
+.travel-card__cta:active {
+  transform: translateY(0);
+}
+
+.travel-card__cta:focus-visible {
+  outline: 2px solid var(--gold-400);
+  outline-offset: 3px;
+}

@@ -1,0 +1,137 @@
+/* ============================================================
+   SocialFeed — Community Feed styles
+   Obsidian-Gold luxury theme
+   ============================================================ */
+
+.social-feed {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.social-feed__title {
+  color: #f5c842;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+/* ── Composer ── */
+.social-feed__composer {
+  background: #12121a;
+  border: 1px solid #b8962e;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+.social-feed__input {
+  background: #1c1c28;
+  border: 1px solid #26263a;
+  border-radius: 8px;
+  color: #e8e0d0;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.social-feed__input::placeholder {
+  color: #5a5570;
+}
+
+.social-feed__input:focus {
+  border-color: #d4af37;
+  outline: none;
+}
+
+.social-feed__post-btn {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #d4af37 0%, #f5c842 100%);
+  border: none;
+  border-radius: 6px;
+  color: #0a0a0f;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  transition: opacity 0.2s;
+}
+
+.social-feed__post-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+/* ── Lumina interjection banner ── */
+.social-feed__lumina-interject {
+  background: #0a0a0f;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+.social-feed__lumina-label {
+  color: #d4af37;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+/* ── Post list ── */
+.social-feed__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-feed__post {
+  background: #12121a;
+  border: 1px solid #26263a;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.social-feed__post-header {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.social-feed__post-author {
+  color: #f5c842;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.social-feed__post-time {
+  color: #5a5570;
+  font-size: 12px;
+}
+
+.social-feed__post-content {
+  color: #c8bfa8;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.social-feed__post-suggestion {
+  border-top: 1px solid #26263a;
+  margin-top: 14px;
+  padding-top: 14px;
+}
