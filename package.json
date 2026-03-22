@@ -1,0 +1,26 @@
+{
+  "name": "lbc-hub-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The unified ecosystem for Social connection, Marketplace innovation, AI-powered Travel, and Riding services. Architected for the Diamond Standard.",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "build": "npm run build --workspace=packages/shared && npm run build --workspace=frontend && npm run build --workspace=backend",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "type-check": "npm run type-check --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
