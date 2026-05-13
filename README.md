@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# LBC Network — The Digital City
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> The unified ecosystem for social connection, marketplace innovation, and AI-powered living.
 
-Currently, two official plugins are available:
+Built on Solana. Powered by community. Governed by $LBC.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## What is LBC?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+LBC Network is a multi-domain digital city — a living ecosystem where people connect, trade, travel, and build together using blockchain-native tools and AI intelligence.
 
-## Expanding the ESLint configuration
+**Five interconnected domains:**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Domain | Role |
+|---|---|
+| lbc.network | Foundation & Governance |
+| lbchub.io | Protocol Hub & $LBC Token |
+| lbc-hub.com | Community, Marketplace, Travel, Rides |
+| lbchub.site | Builder Tools & Developer SDK |
+| lbchub.live | Live Events, NFT Tickets, Creator Economy |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Core Products
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **LBC Hub** — Social feed, marketplace, AI travel planner, ride sharing
+- **LBC Auto** — AI-powered auto shop management (live revenue)
+- **LBC Wallet** — Solana-native wallet with $LBC integration
+- **LBC Protocol** — DeFi layer, token economics, liquidity
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Token
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**$LBC** on Solana Mainnet
+Mint: `2UoettzUUevYNNMhLYACqxjbvkpS4dnCZhbV6xFkuKkT`
+Supply: 1,000,000,000 | Mint authority: renounced | Freeze authority: renounced
+
+---
+
+## Team
+
+Built by LBC NETWORK inc — Ottawa, Canada
+Founded by Mokhtar Tarek Samara
+
+> "We are not building an app. We are building a city."
+
+---
+
+## Status
+
+- Live hackathon submission: Colosseum Solana Frontier 2026
+- Live revenue: LBC Auto (Terry Fox Auto Center, Gatineau QC)
+- Active token: $LBC on Solana Mainnet
+
