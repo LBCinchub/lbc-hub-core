@@ -387,8 +387,11 @@ More Users Join
 - [ ] P2P Services Marketplace
 
 ### Phase 3 — Scale (July–August 2026)
+- [ ] LBC Hub App — iOS & Android release
+- [ ] Driver Portal App — first mobile release
+- [ ] Lumina Blockchain Wallet App — iOS & Android
+- [ ] $LBC Token Liquidity Pool launch
 - [ ] LBC Agent Commerce Layer (MCP-compatible)
-- [ ] LBC Mobile App — iOS + Android
 - [ ] lbchub.shop — Official Store
 - [ ] lbchub.live — NFT Event Ticketing
 
