@@ -406,7 +406,7 @@ More Users Join
 ### Mokhtar Tarek Samara — Founder & CEO
 Lebanese-Canadian entrepreneur based in Ottawa, Canada. Background in community-first logistics and technology. First-generation immigrant with deep Founder-Market Fit — built LBC to solve the exact connectivity and trust problems he experienced firsthand moving from Majdal Anjar, Lebanon to Canada.
 
-### Ahmad & Karim — Engineering (Syria)
+### Ahmad, Karim & Aker — Engineering (Syria)
 Core builders responsible for smart contract development, backend infrastructure, and Solana integration.
 
 ### Collins Aj254 — Engineering (Kenya)
